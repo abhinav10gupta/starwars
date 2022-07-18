@@ -20,7 +20,9 @@ Maven 3.6.1
 IntelliJ IDEA 2019.2.3/ any preffered  IDE
 
 GIT command to clone repository - 
+```
 git clone -b main https://github.com/abhinav10gupta/starwars
+```
 
 
 Note(Configurations) : 
@@ -49,25 +51,6 @@ Note(Configurations) :
   12. if "true: add isLeiaOnPlanet as true else value should be false. 
 
 
-# InformationController
-This class is used to map the endpoints to the functions. It would accept the request and intiate the function with business logic.
-
-
-# InformationService
-It is an iterface with the abstract method to support future implementation. The current method getInfo() is implemented in InformationServiceImpl.
-
-
-# InformationServiceImpl
-The business logic & required validation is implmented in the class. 
-The getInfo() method is called from the controller which implements the abstract method in the InformationService interface. 
-
-
-# GetRequestRepository
-This class helps to segregate different request. And supports to establish to connection.   
-
-
-# GetConnection
-The http connection required fro teh project is managed in this class. 
 
 
 

@@ -12,7 +12,7 @@ Swapi has various end points -
 
 We need to fetch & process data from these API's as per the business logic and return a json resultset. 
 
-<br>
+
 **Pre Requisites:** 
 
 Java **11.0.15** <br>
@@ -24,7 +24,7 @@ GIT command to clone repository:
 ```
 git clone https://github.com/abhinav10gupta/starwars.git
 ```
-<br>
+
 **Developer Configurations:**
 
 1. Intellij -> Preferences -> Compiler -> Java Compiler -> Per-module byte code version -> Target byte code version -> 11 [Target bytecode version should be same as java version]
@@ -39,11 +39,13 @@ git clone https://github.com/abhinav10gupta/starwars.git
 
 **API Endpoints:**
 
+```
 1. /information - Business Implmentation to fetch the required output. 
 2. /help - To help the user with correct API details. 
+```
 
 
-<br>
+
 # Implementation Logic 
   1. Get Name, Class & model of the Starship "Death Star" from https://swapi.dev/api/starships/Death/9, Parameters required starships & Death.
   2. Add the 3 values in a json object - starshipJsonData

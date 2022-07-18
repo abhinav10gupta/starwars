@@ -36,7 +36,7 @@ git clone https://github.com/abhinav10gupta/starwars.git
 
 
 
-<br>
+
 **API Endpoints:**
 
 1. /information - Business Implmentation to fetch the required output. 

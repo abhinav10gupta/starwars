@@ -13,18 +13,58 @@ Swapi has various end points -
 We need to fetch & process data from these API's as per the business logic and return a json resultset. 
 
 
+Pre Requisites : 
+
+Java 11.0.15
+Maven 3.6.1
+IntelliJ IDEA 2019.2.3/ any preffered  IDE
+
+GIT command to clone repository - 
+git clone -b main https://github.com/abhinav10gupta/starwars
+
+
+Note(Configurations) : 
+1. Intellij -> Preferences -> Compiler -> Java Compiler -> Per-module byte code version -> Target byte code version -> 11 [Target bytecode version should be same as java version]
+2. Select starwars Project -> Right click -> Project Structure -> Project Settings -> Modules -> Sources -> Language Level -> 11
+                                                                                          ... -> Paths -> Output path -> ./starwars/target/classes
+                                                                                          ... -> Paths -> Target path -> ./starwars/target/test-classes
+                                                                                
+3. Select starwars Project -> Right click -> Project Structure -> Project Settings -> Modules ->Dependencies -> Module SDK -> Java 11.0.15                                                                      
+4. Springboot configuration & its dependencies are mentioned in pom.xml.
+
+
+
+
+# Implementation Logic 
+  1. Get Name, Class & model of the Starship "Death Star" from https://swapi.dev/api/starships/Death/9, Parameters required starships & Death.
+  2. Add the 3 values in a json object - starshipJsonData
+  3. Add starshipJsonData into the jsonobject named jsonResultSet. 
+  4. Get json data from people API "Darth Vader" is using from https://swapi.dev/api/people/4. Parameter required - "Darth" 
+  5. Get the ship URI - "https://swapi.dev/api/starships/13/"
+  6. Hit the startshipURL, from responseObject get the crew value json response. If the crew value is null set it to 0. Add teh crew data to jsonResultSet.
+  7. Get json data from people API "Leia Organa" is using from https://swapi.dev/api/people/5
+  9. Take planet URI from json response. 
+  10. From Planet URL get the name of the planet captured in response object. 
+  11. Check if planet is equals to "Aleraan". 
+  12. if "true: add isLeiaOnPlanet as true else value should be false. 
+
+
 # InformationController
 This class is used to map the endpoints to the functions. It would accept the request and intiate the function with business logic.
 
+
 # InformationService
 It is an iterface with the abstract method to support future implementation. The current method getInfo() is implemented in InformationServiceImpl.
+
 
 # InformationServiceImpl
 The business logic & required validation is implmented in the class. 
 The getInfo() method is called from the controller which implements the abstract method in the InformationService interface. 
 
+
 # GetRequestRepository
 This class helps to segregate different request. And supports to establish to connection.   
+
 
 # GetConnection
 The http connection required fro teh project is managed in this class. 

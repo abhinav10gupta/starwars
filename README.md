@@ -29,8 +29,8 @@ git clone https://github.com/abhinav10gupta/starwars.git
 
 1. Intellij -> Preferences -> Compiler -> Java Compiler -> Per-module byte code version -> Target byte code version -> 11 [Target bytecode version should be same as java version]
 2. Select starwars Project -> Right click -> Project Structure -> Project Settings -> Modules -> Sources -> Language Level -> 11<br>
-                                                                                          ... -> Paths -> Output path -> ./starwars/target/classes<br>
-                                                                                          ... -> Paths -> Target path -> ./starwars/target/test-classes<br>
+                                                                               ... -> Modules -> Paths -> Output path -> ./starwars/target/classes<br>
+                                                                               ... -> Modules -> Paths -> Target path -> ./starwars/target/test-classes<br>
                                                                               
 3. Select starwars Project -> Right click -> Project Structure -> Project Settings -> Modules ->Dependencies -> Module SDK -> Java 11.0.15<br>
 

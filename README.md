@@ -13,10 +13,6 @@ Swapi has various end points -
 We need to fetch & process data from these API's as per the business logic and return a json resultset. 
 
 
-# Business Logic
-
-
-
 # InformationController
 This class is used to map the endpoints to the functions. It would accept the request and intiate the function with business logic.
 

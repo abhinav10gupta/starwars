@@ -1,4 +1,4 @@
-# starwars
+# Starwars API
 
 This project is created to fetch the data from an URL based API - "https://swapi.dev/". 
 Swapi has various end points - 
@@ -15,9 +15,9 @@ We need to fetch & process data from these API's as per the business logic and r
 
 Pre Requisites : 
 
-Java 11.0.15
-Maven 3.6.1
-IntelliJ IDEA 2019.2.3/ any preffered  IDE
+Java **11.0.15** <br>
+Maven **3.6.1**  <br>
+IntelliJ IDEA **2019.2.3** / any preffered  IDE  <br>
 
 GIT command to clone repository - 
 ```
@@ -35,7 +35,9 @@ Developer Configurations :
 
 
 
-
+API Endpoints - 
+1. **/information**
+2. /help
 
 # Implementation Logic 
   1. Get Name, Class & model of the Starship "Death Star" from https://swapi.dev/api/starships/Death/9, Parameters required starships & Death.
